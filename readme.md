@@ -15,3 +15,5 @@
   - Initialized Git for version control.
   - **Case Study:** Calculated Daily Active Users (DAU) for an e-commerce dataset.
   - **Key SQL Used:** `CREATE TABLE`, `INSERT INTO`, `COUNT(DISTINCT)`, `GROUP BY`.
+ 
+![Description](images/DB1.png)
