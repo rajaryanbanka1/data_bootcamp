@@ -1,6 +1,3 @@
-# 🚀 Data Engineering & Analytics Bootcamp
-3-Month Intensive Industry Roadmap
-
 ## 📂 Project Structure
 - `/sql_scripts`: Database schemas and analytical queries.
 - `/projects`: End-to-end data pipelines.
@@ -17,3 +14,11 @@
   - **Key SQL Used:** `CREATE TABLE`, `INSERT INTO`, `COUNT(DISTINCT)`, `GROUP BY`.
  
 ![Description](images/DB1.png)
+
+### Day 2: Relational Logic & Joins
+- **Theory:** Mastered the difference between Inner and Left Joins.
+- **Practice:** Solved the "Rising Temperature" logic using a Self-Join.
+- **Industry Case:** Built a Regional Revenue report to identify growth opportunities in underperforming areas (handling NULLs with `COALESCE`).
+- **Tools:** DBeaver, PostgreSQL, Git organization.
+
+![Description](images/P1_D2.png)
