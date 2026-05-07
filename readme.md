@@ -22,3 +22,10 @@
 - **Tools:** DBeaver, PostgreSQL, Git organization.
 
 ![Description](images/P1_D2.png)
+
+### Day 3: Window Functions & Growth Metrics
+-- **Concepts:** CTEs (WITH), Window Functions (RANK, LAG), and defensive coding (NULLIF).
+-- **Metrics:** Calculated Month-over-Month (MoM) Growth and Customer Spending Tiers.
+-- **Data Integrity:** Implemented ROW_NUMBER() strategies to detect and remove duplicate transactions.
+
+
