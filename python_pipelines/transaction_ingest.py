@@ -35,9 +35,11 @@ import pandas as pd
 import logging
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
+from pathlib import Path
 
 # 1. Load environment variables from .env file
-load_dotenv()
+env_path = Path('..') / '.env'
+load_dotenv(dotenv_path=env_path)
 
 # 2. Setup Logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -67,6 +69,7 @@ def ingest_data(df, table_name):
         df = df[df['purchase_time'] <= current_time]
 
         # Load data
+        print(f"Rows remaining after filtering: {len(df)}")
         df.to_sql(table_name, engine, if_exists='append', index=False, chunksize=1000)
         logging.info(f"✅ Successfully ingested {len(df)} rows into {table_name}")
 
