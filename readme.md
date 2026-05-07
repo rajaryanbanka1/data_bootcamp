@@ -28,4 +28,5 @@
 -- **Metrics:** Calculated Month-over-Month (MoM) Growth and Customer Spending Tiers.
 -- **Data Integrity:** Implemented ROW_NUMBER() strategies to detect and remove duplicate transactions.
 
+![Description](images/P1_D3.png)
 
