@@ -30,3 +30,15 @@
 
 ![Description](images/P1_D3.png)
 
+- **Day 4: Python ETL Pipelines & Data Ingestion**
+  - **Core Concept:** Transitioned from manual SQL to automated **ETL (Extract, Transform, Load)** using Python.
+  - **Tech Stack:** Integrated **Pandas** for data manipulation and **SQLAlchemy** as the database ORM bridge.
+  - **Production Standards:**
+    - **Logging:** Implemented the `logging` library to track pipeline health and catch 2 AM failures.
+    - **Defensive Programming:** Built error-handling blocks (`try-except`) to prevent pipeline crashes during database downtime.
+    - **Data Sanitization:** Created Python logic to clean "dirty" source data (e.g., trimming whitespace, case normalization) before database insertion.
+    - **Scalability:** Utilized **Chunking** (`chunksize`) to handle large datasets without exhausting system memory.
+  - **Idempotency & Safety:** Documented the risks of `if_exists='replace'` vs `append` to ensure historical data integrity.
+ 
+![Description](images/P1_D4.png)
+
